@@ -9,7 +9,7 @@ A few real stakeholder questions:
 - Is there a readmission pattern worth flagging to hospital leadership?
 
 ## Plan
-1. Data Cleaning: will actually do this twice—once in Excel, and once in SQL—to get more practice :) need to check for:
+1. [Data Cleaning](#data-cleaning-results): will actually do this twice—once in Excel, and once in SQL—to get more practice :) need to check for:
    - duplicates
    - missing values
    - typos
@@ -22,3 +22,6 @@ A few real stakeholder questions:
 2. Exploratory Data Analysis
 3. Data Visualizations + Dashboard
 4. Come up with insights + recommendations
+
+### Data Cleaning Results
+- 
