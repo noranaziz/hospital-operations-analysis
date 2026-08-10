@@ -27,6 +27,7 @@ A few real stakeholder questions:
 ### Excel
 - **Duplicates:** 75 duplicate rows found and deleted (Data → Remove Duplicates). Went from **5076 rows** to **5001 rows**.
 <img width="278" height="148" alt="image" src="https://github.com/user-attachments/assets/e7be0121-57b5-4802-824e-2596da76a84a" />
+
 - **Missing values:** 325 blank cells detected with COUNTBLANK function and highlighted them in red. (Home → Conditional Formatting → New Rule → Format only cells that contain blanks)
    - Checked each column for missing values (Date → Filter):
       - `Gender`: 100
