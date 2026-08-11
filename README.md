@@ -31,7 +31,7 @@ A few real stakeholder questions:
 - **Inconsistent Text Formatting:**
    - Identified columns that had extra white spaces by creating pivot tables. (optional)
    - Took care of extra white spaces in columns `Severity`, `Admission_Type`, `Day_of_Week`, `Department`, and `Readmission_Within_30_Days` by creating a helper column, using the `TRIM` function, pasting them as values on the original column, and finally deleting the helper column.
-   - Identified columns that had different cases (e.g., Gender column having "Female", "female", and "FEMALE") by using the `EXACT` function in helper column. (optional)
+   - Identified columns that had different cases (e.g., `Gender` column having "Female", "female", and "FEMALE") by using the `EXACT` function in helper column. (optional)
    - Took care of casing inconsistencies in columns `Gender`, `Severity`, `Day_of_Week`, `Department`, and `Readmission_Within_30_Days` with helper column by using the `PROPER` and `UPPER` functions.
 
 - **Missing values:** 325 blank cells detected with the `COUNTBLANK` function and highlighted them in red. (Home → Conditional Formatting → New Rule → Format only cells that contain blanks)
