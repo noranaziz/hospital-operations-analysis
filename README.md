@@ -27,6 +27,7 @@ A few real stakeholder questions:
 ### Excel
 - **Duplicates:** 75 duplicate rows found and deleted (Data → Remove Duplicates). Went from **5076 rows** to **5001 rows**.
 <img width="278" height="148" alt="image" src="https://github.com/user-attachments/assets/e7be0121-57b5-4802-824e-2596da76a84a" />
+
 - **Inconsistent Text Formatting:**
    - Identified columns that had extra white spaces by creating pivot tables.
    - Took care of extra white spaces in columns `Severity`, `Admission_Type`, `Day_of_Week`, `Department`, and `Readmission_Within_30_Days` by creating a helper column, using the `TRIM` function, pasting them as values on the original column, and finally deleting the helper column.
