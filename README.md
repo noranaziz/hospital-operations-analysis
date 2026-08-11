@@ -11,11 +11,11 @@ A few real stakeholder questions:
 ## Plan
 1. [Data Cleaning](#data-cleaning-results): will actually do this twice—once in Excel, and once in SQL—to get more practice :) need to check for:
    - duplicates
+   - inconsistent text formatting (look for entries that refer to the same thing but are written differently)
    - missing values
    - typos
    - outliers
    - data constraints
-   - inconsistent text formatting (look for entries that refer to the same thing but are written differently)
    - inconsistent data formatting (dates, phone numbers, etc.)
    - irrelevant data
    - data normalization
@@ -29,9 +29,10 @@ A few real stakeholder questions:
 <img width="278" height="148" alt="image" src="https://github.com/user-attachments/assets/e7be0121-57b5-4802-824e-2596da76a84a" />
 
 - **Inconsistent Text Formatting:**
-   - Identified columns that had extra white spaces by creating pivot tables.
+   - Identified columns that had extra white spaces by creating pivot tables. (optional)
    - Took care of extra white spaces in columns `Severity`, `Admission_Type`, `Day_of_Week`, `Department`, and `Readmission_Within_30_Days` by creating a helper column, using the `TRIM` function, pasting them as values on the original column, and finally deleting the helper column.
-   - Casing next!
+   - Identified columns that had different cases (e.g., Gender column having "Female", "female", and "FEMALE") by using the `EXACT` function in helper column. (optional)
+   - Took care of casing inconsistencies in columns `Gender`, `Severity`, `Day_of_Week`, and `Department` with helper column by using the `PROPER` and `UPPER` functions.
 
 - **Missing values:** 325 blank cells detected with the `COUNTBLANK` function and highlighted them in red. (Home → Conditional Formatting → New Rule → Format only cells that contain blanks)
    - Checked each column for missing values (Date → Filter):
