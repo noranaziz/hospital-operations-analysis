@@ -36,8 +36,8 @@ A few real stakeholder questions:
 
 - **Missing values:** 325 blank cells detected with the `COUNTBLANK` function and highlighted them in red. (Home → Conditional Formatting → New Rule → Format only cells that contain blanks)
    - Checked each column for missing values (Date → Filter):
-      - `Gender`: 100 → Replaced with 'Unknown'
+      - `Gender`: 100 → Replaced with "Unknown"
       - `Length_of_Stay`: 50
       - `Oxygen_Units_Used`: 100
-      - `Department`: 75 → Replaced with 'Unknown'
+      - `Department`: 75 → Replaced with "Unknown"
       - All other columns contained no missing values.
