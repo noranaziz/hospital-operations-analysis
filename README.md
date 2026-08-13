@@ -37,7 +37,7 @@ A few real stakeholder questions:
 - **Missing values:** 325 blank cells detected with the `COUNTBLANK` function and highlighted them in red. (Home → Conditional Formatting → New Rule → Format only cells that contain blanks)
    - Checked each column for missing values (Date → Filter):
       - `Gender`: 100 → Replaced with "Unknown"
-      - `Length_of_Stay`: 50
-      - `Oxygen_Units_Used`: 100
+      - `Length_of_Stay`: 50 → This column is influenced by `Admission_Type`; when it's OPD, most of the time it's 0 days, with some entries being 1-3 days. As such, all missing values will be replaced by the median of OPD (0). With inpatient and emergency admissions, patients tend to stay longer, with the median being 3 days which would replace the missing values for those entries.
+      - `Oxygen_Units_Used`: 100 → 
       - `Department`: 75 → Replaced with "Unknown"
       - All other columns contained no missing values.
